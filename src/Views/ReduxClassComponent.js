@@ -6,7 +6,7 @@ import reactotron from "../../ReactotronConfig";
 import {UPDATE_APP_ALIVE_API} from "../Redux/Actions/Types";
 import {updateAppAliveApiCallAction} from "../Redux/Actions/AppActions";
 
-class Login extends Component {
+class ReduxClassComponent extends Component {
 
     componentDidMount() {
         reactotron.log('Did mount action triggered!!');
@@ -56,4 +56,4 @@ const mapDispatchToProps = {
 //     }
 // }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, mapDispatchToProps)(ReduxClassComponent);
